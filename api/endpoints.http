@@ -1,0 +1,36 @@
+# Add phonebook entry
+POST http://localhost:5000/api/contacts/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "phoneNumber": "+254712345678"
+}
+
+###
+
+# Get all phonebook entries
+GET http://localhost:5000/api/contacts/
+
+###
+
+# Get single phonebook entry
+GET http://localhost:5000/api/contacts/644d28f0e3ada00ff7d9a002
+
+###
+
+# Update single phonebook entry
+PATCH http://localhost:5000/api/contacts/644d28f0e3ada00ff7d9a002
+Content-Type: application/json
+
+{
+    "firstName": "Micheal",
+    "lastName": "Smith",
+    "phoneNumber": "+254712345678"
+}
+
+###
+
+# Delete a single phonebook entry
+DELETE http://localhost:5000/api/contacts/644d28f0e3ada00ff7d9a002

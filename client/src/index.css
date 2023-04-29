@@ -1,0 +1,9 @@
+tbody, td, tfoot, th, thead, tr {
+  border-style: none !important;
+}
+
+.tabe-row {
+  background-color: #edede9;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
